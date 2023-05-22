@@ -1,3 +1,8 @@
+import { BasicTabs } from 'components/Tabs/Tabs';
 import './Header.scss';
 
-export const Header = () => <header>Header</header>;
+export const Header = ({ valueTab, tabNames, writeTabValue = (f) => f }) => (
+  <header>
+    <BasicTabs value={valueTab} tabNames={tabNames} handleChange={writeTabValue} />
+  </header>
+);
