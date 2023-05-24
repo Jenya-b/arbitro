@@ -1,13 +1,48 @@
 import { DataGrid } from '@mui/x-data-grid';
 
+import { RenderHeader } from './RenderHeader/RenderHeader';
 import './Table.scss';
 
 const columns = [
-  { field: 'user', headerName: 'user', width: 130 },
-  { field: 'price', headerName: 'price', width: 100 },
-  { field: 'min_volume', headerName: 'min_volume', width: 100 },
-  { field: 'max_volume', headerName: 'max_volume', width: 100 },
-  { field: 'pay_method', headerName: 'pay_method', width: 100 },
+  {
+    field: 'user',
+    width: 130,
+    renderHeader: () => {
+      return <RenderHeader param="Имя" />;
+    },
+  },
+  {
+    field: 'price',
+    headerName: 'price',
+    width: 100,
+    renderHeader: () => {
+      return <RenderHeader param="price" />;
+    },
+  },
+  {
+    field: 'min_volume',
+    headerName: 'min_volume',
+    width: 100,
+    renderHeader: () => {
+      return <RenderHeader param="min_volume" />;
+    },
+  },
+  {
+    field: 'max_volume',
+    headerName: 'max_volume',
+    width: 100,
+    renderHeader: () => {
+      return <RenderHeader param="max_volume" />;
+    },
+  },
+  {
+    field: 'pay_method',
+    headerName: 'pay_method',
+    width: 100,
+    renderHeader: () => {
+      return <RenderHeader param="pay_method" />;
+    },
+  },
 ];
 
 export const Table = ({ rows, title }) => {
