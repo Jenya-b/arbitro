@@ -1,5 +1,12 @@
 .main {
   padding: 20px 10px;
   display: grid;
-  grid-template-columns: minmax(100px, 1fr) 250px minmax(100px, 1fr);
+  grid-template-columns: minmax(100px, 1fr) 200px minmax(100px, 1fr);
+  column-gap: 10px;
+}
+
+.glass-applications {
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 4px;
+  height: 300px;
 }
