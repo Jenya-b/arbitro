@@ -5,6 +5,11 @@
   overflow: auto;
   padding-right: 8px;
 
+  @media (max-width: 767px) {
+    height: auto;
+    padding-right: 0px;
+  }
+
   h2 {
     font-weight: 600;
   }
