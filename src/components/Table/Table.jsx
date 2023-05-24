@@ -16,7 +16,7 @@ const columns = [
     headerName: 'price',
     width: 100,
     renderHeader: () => {
-      return <RenderHeader param="price" />;
+      return <RenderHeader param="Цена" />;
     },
   },
   {
@@ -24,7 +24,7 @@ const columns = [
     headerName: 'min_volume',
     width: 100,
     renderHeader: () => {
-      return <RenderHeader param="min_volume" />;
+      return <RenderHeader param="Минимум" />;
     },
   },
   {
@@ -32,15 +32,15 @@ const columns = [
     headerName: 'max_volume',
     width: 100,
     renderHeader: () => {
-      return <RenderHeader param="max_volume" />;
+      return <RenderHeader param="Максимум" />;
     },
   },
   {
     field: 'pay_method',
     headerName: 'pay_method',
-    width: 100,
+    width: 120,
     renderHeader: () => {
-      return <RenderHeader param="pay_method" />;
+      return <RenderHeader param="Способ оплаты" />;
     },
   },
 ];
