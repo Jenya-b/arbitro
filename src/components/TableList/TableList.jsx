@@ -10,7 +10,7 @@ export const TableList = ({ data, renderItem = (f) => f, renderEmpty, title }) =
 
     const names = Object.keys(data);
     setNameExchanges(names);
-  }, []);
+  }, [data]);
 
   if (!data) return renderEmpty;
 
