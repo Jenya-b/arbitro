@@ -1,15 +1,16 @@
 .table {
-  max-height: 300px;
-  width: 100%;
-
-  h3 {
-    margin-top: 20px;
-    padding-bottom: 10px;
+  &__title {
     font-size: 18px;
     text-align: center;
+    padding: 15px 0 10px 0;
 
     &::first-letter {
       text-transform: uppercase;
     }
+  }
+
+  &__wrapper {
+    height: 250px;
+    width: 100%;
   }
 }

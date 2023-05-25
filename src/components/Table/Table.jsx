@@ -48,14 +48,19 @@ const columns = [
 export const Table = ({ rows, title }) => {
   return (
     <div className="table">
-      <h3>{title}</h3>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        getRowId={(row) => row.ad_id}
-        rowHeight={30}
-        columnHeaderHeight={40}
-      />
+      <h3 className="table__title">{title}</h3>
+      <div className="table__wrapper">
+        <DataGrid
+          rows={rows}
+          columns={columns}
+          getRowId={(row) => row.ad_id}
+          rowHeight={30}
+          columnHeaderHeight={40}
+          paginationMode={'server'}
+          rowCount={1000}
+          hideFooter={true}
+        />
+      </div>
     </div>
   );
 };
