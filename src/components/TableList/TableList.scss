@@ -9,11 +9,13 @@
     height: auto;
     padding: 15px 10px 15px 10px;
 
-    .css-12u49z-MuiDataGrid-root {
+    .css-12u49z-MuiDataGrid-root,
+    .css-1si6n65 {
       border-color: $borderMob;
     }
 
-    .css-12u49z-MuiDataGrid-root .MuiDataGrid-withBorderColor {
+    .css-12u49z-MuiDataGrid-root .MuiDataGrid-withBorderColor,
+    .css-1si6n65 .MuiDataGrid-withBorderColor {
       border-color: $borderMob;
     }
 
