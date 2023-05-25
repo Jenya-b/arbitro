@@ -1,5 +1,11 @@
+@import 'styles/variables';
+
 .wrapper {
   min-height: 100vh;
   display: grid;
   grid-template: 48px 1fr / 1fr;
+
+  @media (max-width: 767px) {
+    background: $backgroundMain;
+  }
 }

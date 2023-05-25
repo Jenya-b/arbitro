@@ -1,3 +1,5 @@
+@import 'styles/variables';
+
 .main {
   padding: 20px 10px;
   display: grid;
@@ -6,17 +8,19 @@
 
   @media (max-width: 767px) {
     column-gap: 0;
-    row-gap: 20px;
+    padding: 20px 0 0 0;
     grid-template: repeat(3, auto) / minmax(100px, 1fr);
   }
 }
 
 .glass-applications {
-  border: 1px solid rgba(224, 224, 224, 1);
+  border: 1px solid $borderMain;
   border-radius: 4px;
   height: 300px;
 
   @media (max-width: 767px) {
     grid-row: 1/2;
+    margin: 0 10px;
+    border: 1px solid $borderMob;
   }
 }

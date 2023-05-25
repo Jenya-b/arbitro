@@ -7,7 +7,24 @@
 
   @media (max-width: 767px) {
     height: auto;
-    padding-right: 0px;
+    padding: 15px 10px 15px 10px;
+
+    .css-12u49z-MuiDataGrid-root {
+      border-color: $borderMob;
+    }
+
+    .css-12u49z-MuiDataGrid-root .MuiDataGrid-withBorderColor {
+      border-color: $borderMob;
+    }
+
+    &:first-child {
+      margin-top: 20px;
+      background-color: $backgroundSecondary;
+    }
+
+    &:last-child {
+      background-color: $backgroundPrimary;
+    }
   }
 
   h2 {
